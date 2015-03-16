@@ -1,3 +1,4 @@
+//---
 package br.com.devmedia.antipadroes;
 
 public class Curso {
