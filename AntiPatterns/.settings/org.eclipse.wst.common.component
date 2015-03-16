@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="AntiPatterns">
+    <wb-module deploy-name="EJMAntiPatterns">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="AntiPatterns"/>
-        <property name="java-output-path" value="/AntiPatterns/build/classes"/>
+        <property name="java-output-path" value="/EJMAntiPatterns/build/classes"/>
+        <property name="context-root" value="EJMAntiPatterns"/>
     </wb-module>
 </project-modules>
