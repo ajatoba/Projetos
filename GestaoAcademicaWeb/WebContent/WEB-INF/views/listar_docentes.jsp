@@ -8,7 +8,7 @@
 
 <h3>Docentes Cadastrados</h3>
 
-<h3><a href="form">+ Novo Docente</a></h3>
+<h3><a href="${flowExecutionUrl}&_eventId=novo">+ Novo Docente</a></h3>
 <c:if  test="${!empty docenteList}">
 <table border="1">
 <tr>
@@ -22,7 +22,7 @@
         <td>${docente.nome} </td>
         <td>${docente.matricula}</td>
         <td>${docente.titulacao}</td>
-        <td><a href="detalhe/${docente.id}">Ver detalhes</a></td>
+        <td><a href="${flowExecutionUrl}&_eventId=excluir&docenteId=${docente.id}">Excluir</a></td>
     </tr>
 </c:forEach>
 </table>

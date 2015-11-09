@@ -1,19 +1,16 @@
 package br.com.devmedia.gestaoacademicaweb.model;
 
-import java.util.Set;
+import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 
 @Entity
 @Table(name="DOCENTES")
-public class Docente {
+public class Docente implements Serializable{
 
 	@Id
     @Column(name="ID")
@@ -29,9 +26,6 @@ public class Docente {
 	@Column(name="TITULACAO")
 	private String titulacao;
 	
-	@OneToMany(mappedBy = "docente", fetch=FetchType.LAZY)
-    private Set<Projeto> projetos;
-		
 	public Integer getId() {
 		return id;
 	}
@@ -55,12 +49,6 @@ public class Docente {
 	}
 	public void setTitulacao(String titulacao) {
 		this.titulacao = titulacao;
-	}
-	public Set<Projeto> getProjetos() {
-		return projetos;
-	}
-	public void setProjetos(Set<Projeto> projetos) {
-		this.projetos = projetos;
 	}
 	
 }

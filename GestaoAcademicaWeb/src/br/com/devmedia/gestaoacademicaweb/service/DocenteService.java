@@ -6,7 +6,6 @@ import br.com.devmedia.gestaoacademicaweb.model.Docente;
 
 public interface DocenteService {
 	public void adicionarDocente(Docente docente);
+	public void removerDocente(int id);
 	public List<Docente> listarDocentes();
-	public Docente verDocente(int id);
-
 }

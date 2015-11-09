@@ -8,8 +8,7 @@
 
 <h3>Formulário de Cadastro de Docentes</h3>
  
-<form:form method="post" action="adicionar.html" commandName="docente">
- 
+<form:form method="post" modelAttribute="docenteModel">
     <table>
     <tr>
         <td>Nome:</td>
@@ -24,8 +23,11 @@
         <td><form:input path="titulacao" /></td>
     </tr>
     <tr>
-        <td colspan="2">
-            <input type="submit" value="Salvar"/>
+        <td>
+            <input type="submit" name="_eventId_inserir" value="Salvar"/>            
+        </td>
+        <td>
+            <input type="submit" name="_eventId_cancelar" value="Cancelar"/>                      
         </td>
     </tr>
 </table>  
